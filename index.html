@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Grid</title>
+    <script src="./app.js"></script>
+    <!-- <script src="./src/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./src/style.scss"> -->
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <input type="text" placeholder="Search Country" class="search" onkeyup="fn(event.target.value)" id="search" />
+        </div>
+        <div class="loader">
+            <div class="shadow"></div>
+        </div>
+
+        <div class="data-table">
+
+            <div class="Rtable-row Rtable-row--head">
+               
+            </div>
+
+            <div class="Rtable-body full-width giugj" id="tbody">
+
+            </div>
+
+        </div>
+        <div class="pagination-block">
+            <span class="pageButton outline-none" id="button_prev">Prev</span>
+            <span id="page_number" class="outline-none"></span>
+            <span class="pageButton outline-none" id="button_next">Next</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

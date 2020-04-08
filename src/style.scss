@@ -1,0 +1,206 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.search {
+	display: block;
+	width: 400px;
+	text-align: center;
+	height: 30px;
+	margin-bottom: 20px;
+}
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+.full-width {
+	width: 100%;
+}
+.full-height {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.title {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+}
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #c3b6b6;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	box-shadow: 0 0 0px #FFF;
+}
+.shadow {
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	background: #757575;
+	transition: all .3s ease;
+	animation: move 1.2s infinite alternate ease-in-out;
+	transform: translate3d(20px, -12px, 2px);
+}
+@keyframes move {
+	100% {
+		transform: translate3d(36px, -26px, 4px);
+	}
+}
+.hide {
+    display: none;
+}
+
+/* Pagination Block */
+.data-table {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 3em 0;
+	padding: 0;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+	.Rtable-row {
+		width: 100%;
+		display: flex;
+		.Rtable-cell {
+			box-sizing: border-box;
+			width: auto;
+			padding: 0.8em 1.2em;
+			overflow: hidden;
+			list-style: none;
+			flex: 1 0;
+			&.column-heading {
+				background-color: #b1b1b1;
+    			color: black;
+    			padding: 1em;
+    			flex-direction: column;
+				display: flex;
+				   input {
+					width: 45%;
+					margin-top: 5px;
+					height: 28px;
+					border-radius: 4px;
+				   }
+				   .arrow-up:before {
+					content: "▲";
+					color:black;
+			        }
+			       .arrow-down:before {
+					content: "▼";
+					color: black;
+			        }
+			}
+			.Rtable-cell--heading {
+				display: none;
+			}
+			.Rtable-cell--content {
+				a {
+					font-size: 2em;
+					color: #333;
+				}
+				.webinar-date {
+					font-weight: 700;
+				}
+			}
+			img {
+				width: 200px;
+				height: auto;
+			}
+		}
+	}
+	.Rtable-body {
+		height: calc(100vh - 200px);
+		overflow: auto;
+		width: 100%;
+	}
+	.Rtable-row--head {
+		height: 82px;
+	}
+
+
+.pagination {
+	max-width: 400px;
+	min-width: 300px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	background-color: lightgreen;
+	padding: 20px;
+	.tableList {
+		min-height: 250px;
+		text-indent: 20px;
+	}
+}
+.tableList {
+	.objectBlock {
+		position: relative;
+		background-color: black;
+		color: white;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
+.pageButton {
+	border: 1px solid black;
+	padding: 5px;
+}
+.clickPageNumber {
+	background-color: lightgrey;
+	padding: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.pagination-block {
+	text-align: center;
+	width: 100%;
+	span {
+		display: inline-block;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.pageButton {
+		background-color: grey;
+		color: white;
+	}
+}
+.opacity {
+	opacity: 0.5;
+}
+.outline-none {
+	outline: none;
+	user-select: none;
+}
+.page {
+	padding: 5px;
+	background-color: grey;
+	border: 1px solid;
+	margin: 10px;
+	color: white;
+}
