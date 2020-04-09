@@ -1,3 +1,7 @@
+$row-bg-color : #c5c5c5;
+$white: white;
+$black: black;
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -48,7 +52,7 @@
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
-	box-shadow: 0 0 0px #FFF;
+	box-shadow: 0 0 0px $white;
 }
 .shadow {
 	margin: auto;
@@ -78,7 +82,7 @@
 .data-table {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 0 3em 0;
+	margin: 0 0 1em 0;
 	padding: 0;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
@@ -87,6 +91,9 @@
 	.Rtable-row {
 		width: 100%;
 		display: flex;
+		&:nth-child(even) {
+			background-color: $row-bg-color;
+		}
 		.Rtable-cell {
 			box-sizing: border-box;
 			width: auto;
@@ -113,7 +120,10 @@
 			       .arrow-down:before {
 					content: "▼";
 					color: black;
-			        }
+					}
+					span {
+						cursor: pointer;
+					}
 			}
 			.Rtable-cell--heading {
 				display: none;
